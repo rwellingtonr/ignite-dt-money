@@ -1,7 +1,10 @@
 import { createStitches } from "@stitches/react"
 
-export const { createTheme } = createStitches({
+export const { styled, theme } = createStitches({
 	utils: {
+		p: (value: string) => ({
+			padding: value,
+		}),
 		py: (value: string) => ({
 			paddingTop: value,
 			paddingBottom: value,
@@ -9,6 +12,17 @@ export const { createTheme } = createStitches({
 		px: (value: string) => ({
 			paddingLeft: value,
 			paddingRight: value,
+		}),
+		m: (value: string) => ({
+			margin: value,
+		}),
+		mx: (value: string) => ({
+			marginLeft: value,
+			marginRight: value,
+		}),
+		my: (value: string) => ({
+			marginTop: value,
+			marginBottom: value,
 		}),
 	},
 	media: {
