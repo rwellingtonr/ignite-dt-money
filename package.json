@@ -9,7 +9,8 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"server:fake": "npx json-server -w -d 500"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.0.3",
@@ -29,6 +30,7 @@
 		"eslint": "^8.38.0",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-react": "^7.32.2",
+		"json-server": "^0.17.3",
 		"prettier": "^2.8.7",
 		"typescript": "^4.9.5",
 		"vite": "^4.3.1",
