@@ -123,8 +123,13 @@ export const CreateNewTransactionButton = styled("button", {
 	p: "1rem 2rem",
 	marginTop: "1.5rem",
 
-	"&:hover": {
+	"&:not(:disabled):hover": {
 		background: "$green-700",
 		transition: "background .2s easy-in",
+	},
+
+	"&:disabled": {
+		opacity: 0.5,
+		cursor: "not-allowed",
 	},
 })

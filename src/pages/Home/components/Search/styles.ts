@@ -34,10 +34,15 @@ export const SearchButtonContainer = styled("button", {
 		fontWeight: "$bold",
 	},
 
-	"&:hover": {
+	"&:not(:disabled):hover": {
 		background: "$green-500",
 		border: "1px solid $green-500",
 		color: "#fff",
 		transition: "all 0.2s easy-in",
+	},
+
+	"&:disabled": {
+		cursor: "not-allowed",
+		opacity: 0.5,
 	},
 })
